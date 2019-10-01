@@ -31,7 +31,7 @@
 	</main>
 	
 	<script>
-	// Set our videos
+	// Set our videos attributes.
 	var windowWidth = window.innerWidth;
 	var windowHeight = window.innerHeight;
 	
@@ -42,6 +42,8 @@
 	} else {
 		aspectRatio = '';
 	}
+	
+	// Preload the videos to improve responsiveness.
 	document.getElementById('preload-correct').innerHTML='<source src="media/correct' + aspectRatio + '.mp4" type="video/mp4">';
 	document.getElementById('preload-incorrect').innerHTML='<source src="media/incorrect' + aspectRatio + '.mp4" type="video/mp4">';
 	
